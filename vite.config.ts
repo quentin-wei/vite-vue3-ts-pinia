@@ -5,7 +5,6 @@ import * as path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
-    //设置别名
     alias: {
       '@': path.resolve(__dirname, 'src')
     }
@@ -17,7 +16,6 @@ export default defineConfig({
       host: 'localhost',
       port: 8080
     },
-    // 设置代理
     proxy: {
       '/api': {
         target: 'your https address',
